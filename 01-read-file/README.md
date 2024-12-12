@@ -1,13 +1,20 @@
 ## Reading a File with Console Output
 
 In the file `index.js` within the directory `01-read-file`, develop a script that outputs the contents of the file `text.txt` to the console.
+У файлі index.js в директорії 01-read-file розробіть скрипт, який виводить вміст файлу text.txt у консоль.
 
 ### General Rules
 
-- The use of any third-party modules is prohibited.
-- Each task must be executed <u>in the root directory</u> using the command `node <task folder name>`.
-- The use of synchronous functions from the **fs module**, such as `fs.statSync(path[, options])`, `fs.readFileSync(path[, options])`, and others found in the [synchronous API section](https://nodejs.org/api/fs.html#fs_synchronous_api), is prohibited.
+- The use of any third-party modules is prohibited. (Використання будь-яких сторонніх модулів заборонено.)
 
+
+- Each task must be executed <u>in the root directory</u> using the command `node <task folder name>`. (Кожне завдання має виконуватись <u>в кореневій директорії</u> за допомогою команди)
+  Цей пункт означає, що завдання потрібно виконувати з кореневої директорії проєкту, використовуючи команду node, де <task folder name> — це назва папки, яка містить завдання.
+  node 01-read-file , таким записом має виконуватися 
+
+- The use of synchronous functions from the **fs module**, such as `fs.statSync(path[, options])`, `fs.readFileSync(path[, options])`, and others found in the [synchronous API section](https://nodejs.org/api/fs.html#fs_synchronous_api), is prohibited.
+  Використання синхронних функцій з модуля fs, таких як fs.statSync(path[, options]), fs.readFileSync(path[, options]) та інших, що знаходяться в розділі синхронного API, заборонено.
+  
 ### Requirements
 
 - [ ] Inside the folder `01-read-file`, there are 2 files, `index.js` and `text.txt`.
@@ -19,7 +26,9 @@ In the file `index.js` within the directory `01-read-file`, develop a script tha
 
 - Get acquainted with the basics of working with the file system on the Node.js platform.
 - Learn the basics of streams and events.
+
 - Familiarize yourself with the Path module and learn to use it to construct absolute paths to files.
+Ознайомтесь з модулем Path і навчіться використовувати його для побудови абсолютних шляхів до файлів.
 
 ### Description
 
@@ -31,6 +40,8 @@ In this task, you are required to develop a small script that outputs the conten
 - For correctly specifying the file path, you will need the [Path module](https://nodejs.org/api/path.html#path).
 
 2. Create a new **ReadStream** from the file `text.txt`.
+
+
 3. Direct the read stream to the standard output stream.
 
 ### Tips
